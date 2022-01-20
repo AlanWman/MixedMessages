@@ -29,9 +29,97 @@ Adjusted Die Roll	Result
 */
 
 
-function roller = (x) => Math.floor(Math.random()*x);
+const roller = (x) => Math.floor(Math.random() * x + 1);
+
+
+//Determine Encounter
+
 
 //Determine Creature
+const Creature = () => {
+    let roll = roller(11)
+
+    switch (roll) {
+        case 1:
+            let subRoll = roller(oCreatures.Abberations.length - 1)
+            return oCreatures.Aberrations[subRoll]
+            break;
+        case 2:
+            let subRoll = roller(oCreatures.Abberations.length - 1)
+            return oCreatures.Celestials[subRoll]
+            break;
+        case 3:
+            let subRoll = roller(oCreatures.Abberations.length - 1)
+            return oCreatures.Constructs[subRoll]
+            break;
+        case 4:
+            let subRoll = roller(oCreatures.Abberations.length - 1)
+            return oCreatures.Dragons[subRoll]
+           break;
+        case 5:
+            let subRoll = roller(oCreatures.Abberations.length - 1)
+            return oCreatures.Elementals[subRoll]
+            break;
+        case 6:
+            let subRoll = roller(oCreatures.Abberations.length - 1)
+            return oCreatures.Fey[subRoll]
+            break;
+        case 7:
+            let subRoll = roller(oCreatures.Abberations.length - 1)
+            return oCreatures.Fiends[subRoll]
+            break;
+        case 8:
+            let subRoll = roller(oCreatures.Abberations.length - 1)
+            return oCreatures.Giants[subRoll]
+            break;
+        case 9:
+            let subRoll = roller(oCreatures.Abberations.length - 1)
+            return oCreatures.Humanoid[subRoll]    
+            break;
+        case 10:
+            let subRoll = roller(oCreatures.Abberations.length - 1)
+            return oCreatures.Monstrosities[subRoll]
+            break;
+        case 11:
+            let subRoll = roller(oCreatures.Abberations.length - 1)
+            return oCreatures.Undead[subRoll]
+            break;
+        default:
+            console.log('Default case of Creature function.')
+            break;
+    }
+}
+
+//Determine Location
+const Location = () => {
+    let roll = roller(3)
+
+    switch (roll) {
+        case 1:
+            let subRoll = roller(oCreatures.Settlement.length - 1)
+            return oLocations.Settlement[subRoll]
+            break;
+        case 2:
+            let subRoll = roller(oCreatures.Temple.length - 1)
+            return oCreatures.Temple[subRoll]
+            break;
+        case 3:
+            let subRoll = roller(oCreatures.Other.length - 1)
+            return oCreatures.Other[subRoll]
+            break;
+        default:
+            console.log('default case of location function')
+            break;
+    }
+
+
+
+const reaction = () => {
+
+
+}
+
+
 const oCreatures = {
     Aberrations: ['Slaad', 'Otyugh', 'Gibbering Mouther', 'Aboleth'],
     Celestials: ['Pegasus', 'Coutl', 'Angel', 'Empyrean', 'Unicorn'],
@@ -44,7 +132,7 @@ const oCreatures = {
     Humanoid: ['goblinoids', 'orcs', 'gnolls', 'lizardfolk', 'kobolds'],
     Monstrosities: ['Winter Wolf', 'Bulette', 'Roc', 'Medusa'],
     Undead: ['Zombies', 'Wight', 'Vampire', 'Lich']
-    }
+}
 
 const oLocations = {
     Settlement: ['City', 'Town', 'village', 'outpost'],
