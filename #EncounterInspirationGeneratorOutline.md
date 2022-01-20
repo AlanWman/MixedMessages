@@ -1,38 +1,46 @@
-#Planning
-Come Up with a Topic
-Topic: Generate system agnostic random encounters leaning towards fantasy genre.
+# Planning
+
+Topic: Generate random encounter.
+Built With: Javascript
+
+##Description
+Provides a random encounter for 5e D&D when you just can't think of something.
+Scope: 1d6 1d6
+Output - The party encounters **creatures** at a **Location**. Their demeanor is **reaction roll**.
 
 Tables
 Primary Table 
-- 3d6, split into upper(11+) and lower(10-) range
-- upper range is creature focus
-    - Creatures by type
+- Creature/Location/CreatureLocation
+- Creatures by type
         - Creatures
         - 2d6 Reaction roll
 
 - lower range is location focus
 
+Creature types from 5e SRD rules - http://5e.d20srd.org/srd/monsters/intro.htm
+1. Aberrations: Slaad, Otyugh, Gibbering Mouther, Aboleth
+2. Celestials: Pegasus, Coutl, Angel, Empyrean, Unicorn
+3. Constructs: Golem, Homunculus, Animated Objects, Shield Guardian
+4. Dragons: Red, Blue, Green, Black, White, Gold, Silver, Bronze, Brass, Copper
+5. Elementals: Earth, Air, Fire, Water
+6. Fey: Lord, Hag, Dryad, Sprite/Pixie
+7. Fiends: Demon, Devil, Cambion, Night Hag.
+8. Giants:  Frost, Fire, Stone, Storm, Hill
+9. Humanoid:  goblinoids, orcs, gnolls, lizardfolk, kobolds
+10. Monstrosities: Winter Wolf, Bulette, Roc, Medusa
+11. Undead: Zombies, Wight, Vampire, Lich
 
-Secondary table
-Upper range - 
-Lower range
+Locations
+1. Settlement - City, town, village, outpost
+2. Dungeon
+3. Temple - Good, Evil, Pantheon
+4. Fortress 
+5. Tavern
+6. Forest Grove
 
-3d6 Statistical Chance
-#	%
-3	0.46
-4	1.39
-5	2.78
-6	4.63
-7	6.94
-8	9.72
-9	11.57
-10	12.50
-
-11	12.50
-12	11.57
-13	9.72
-14	6.94
-15	4.63
-16	2.78
-17	1.39
-18	0.46
+Reaction Roll Table from Basic Fantasy Roleplay - https://www.basicfantasy.org/srd/#reaction_roll_table
+Adjusted Die Roll	Result
+2 or less	Immediate Attack
+3-7	        Unfavorable
+8-11	    Favorable
+12 or more	Very Favorabl
