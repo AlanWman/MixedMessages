@@ -47,7 +47,9 @@ const Encounter = () => {
     const location = locations();
     const reaction = reactions();
 
-    return `The party encounters ${creature}(s) ${location}. Their demeanor is: ${reaction}.`;
+    console.log(Encounter());
+
+    return undefined;
 }
 
 /*Determine Creature*/
@@ -168,8 +170,9 @@ const reactions = () => {
         return 'Something went wrong'
     }
 }
-
+/*
 console.log(creatures());
 console.log(locations());
 console.log(reactions());
-console.log(Encounter());
+*/
+
