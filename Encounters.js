@@ -34,6 +34,15 @@ const roller = (x) => Math.floor(Math.random() * x + 1);
 
 /*Determine Encounter*/
 
+const Encounter = (creature(),location(),reaction()) => {
+
+    const creature = creature();
+    const location = location();
+    const reaction = reaction();
+
+    return { console.log(`The party encounters ${creature}(s) at ${location}. Their demeanor is: ${reaction}.`)
+    }
+}
 
 /*Determine Creature*/
 const creature = () => {
@@ -140,7 +149,7 @@ const reaction = () => {
     let roll = roller(3)
     let subRoll = undefined;
 
-    let aReaction = ['Immediate Attack', 'Unfavorable','Favorable','Very Favorable']
+    let aReaction = ['Immediately Hostile', 'Unfavorable','Favorable','Very Favorable']
 
     if(roll <= 2){
         return aReaction[0];
@@ -158,4 +167,4 @@ const reaction = () => {
 console.log(creature());
 console.log(location());
 console.log(reaction());
-
+console.log(Encounter());
