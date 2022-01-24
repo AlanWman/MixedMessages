@@ -47,7 +47,7 @@ const Encounter = () => {
     const location = locations();
     const reaction = reactions();
 
-    return `The party encounters ${creature}(s) at ${location}. Their demeanor is: ${reaction}.`;
+    return `The party encounters ${creature}(s) ${location}. Their demeanor is: ${reaction}.`;
 }
 
 /*Determine Creature*/
