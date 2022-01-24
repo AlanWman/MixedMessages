@@ -47,7 +47,7 @@ const Encounter = () => {
     const location = locations();
     const reaction = reactions();
 
-    console.log(Encounter());
+    console.log(`The party encounters ${creature}(s) ${location}. Their demeanor is: ${reaction}.`);
 
     return undefined;
 }
