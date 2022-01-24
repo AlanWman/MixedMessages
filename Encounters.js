@@ -115,6 +115,7 @@ const location = () => {
         Settlement: ['City', 'Town', 'village', 'outpost'],
         Temple: ['Good', 'Evil', 'Pantheon'],
         Other: ['Dungeon', 'Fortress', 'Tavern', 'Forest Grove']
+    }
 
     switch (roll) {
         case 1:
