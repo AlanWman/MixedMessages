@@ -142,6 +142,5 @@ const oLocations = {
     Other: ['Dungeon', 'Fortress', 'Tavern', 'Forest Grove']
 }
 
-
-
+console.log(Creature());
 
