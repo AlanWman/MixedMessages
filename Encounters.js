@@ -129,7 +129,7 @@ const locations = () => {
     const oLocations = {
         Settlement: ['a City', 'a Town', 'a Village', 'a Outpost'],
         Temple: ['a Temple of Good', 'a Temple of Evil', 'a Temple of a Pantheon'],
-        Other: ['in a Dungeon', ' at a Fortress', 'at a Tavern', 'in a Forest Grove']
+        Other: ['in a Dungeon', 'at a Fortress', 'at a Tavern', 'in a Forest Grove']
     }
 
     switch (roll) {
