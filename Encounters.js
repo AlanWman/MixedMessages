@@ -34,7 +34,7 @@ const roller = (x) => Math.floor(Math.random() * x + 1);
 
 /*Determine Encounter*/
 
-const Encounter = (creatures, locations, reactions) => {
+const Encounter = () => {
     const creature = creatures();
     const location = locations();
     const reaction = reactions();
