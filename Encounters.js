@@ -34,18 +34,16 @@ const roller = (x) => Math.floor(Math.random() * x + 1);
 
 /*Determine Encounter*/
 
-const Encounter = (creature(),location(),reaction()) => {
+const Encounter = (creatures, locations, reactions ) => {
+    const creature = creatures();
+    const location = locations();
+    const reaction = reactions();
 
-    const creature = creature();
-    const location = location();
-    const reaction = reaction();
-
-    return { console.log(`The party encounters ${creature}(s) at ${location}. Their demeanor is: ${reaction}.`)
-    }
+    return `The party encounters ${creature}(s) at ${location}. Their demeanor is: ${reaction}.`;
 }
 
 /*Determine Creature*/
-const creature = () => {
+const creatures = () => {
     let roll = roller(11);
     let subRoll = undefined;
 
@@ -116,7 +114,7 @@ const creature = () => {
 }
 
 /*Determine Location*/
-const location = () => {
+const locations = () => {
     let roll = roller(3)
     let subRoll = undefined;
 
@@ -145,7 +143,7 @@ const location = () => {
     }
 }
 /*Initial demeanor*/
-const reaction = () => {
+const reactions = () => {
     let roll = roller(3)
     let subRoll = undefined;
 
@@ -164,7 +162,7 @@ const reaction = () => {
     }
 }
 
-console.log(creature());
-console.log(location());
-console.log(reaction());
+console.log(creatures());
+console.log(locations());
+console.log(reactions());
 console.log(Encounter());
