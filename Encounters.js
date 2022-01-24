@@ -82,43 +82,43 @@ const Creature = () => {
             return oCreatures.Aberrations[subRoll]
             break;
         case 2:
-            subRoll = roller(oCreatures.Abberations.length - 1)
+            subRoll = roller(oCreatures.Aberrations.length - 1)
             return oCreatures.Celestials[subRoll]
             break;
         case 3:
-            subRoll = roller(oCreatures.Abberations.length - 1)
+            subRoll = roller(oCreatures.Aberrations.length - 1)
             return oCreatures.Constructs[subRoll]
             break;
         case 4:
-            subRoll = roller(oCreatures.Abberations.length - 1)
+            subRoll = roller(oCreatures.Aberrations.length - 1)
             return oCreatures.Dragons[subRoll]
            break;
         case 5:
-            subRoll = roller(oCreatures.Abberations.length - 1)
+            subRoll = roller(oCreatures.Aberrations.length - 1)
             return oCreatures.Elementals[subRoll]
             break;
         case 6:
-            subRoll = roller(oCreatures.Abberations.length - 1)
+            subRoll = roller(oCreatures.Aberrations.length - 1)
             return oCreatures.Fey[subRoll]
             break;
         case 7:
-            subRoll = roller(oCreatures.Abberations.length - 1)
+            subRoll = roller(oCreatures.Aberrations.length - 1)
             return oCreatures.Fiends[subRoll]
             break;
         case 8:
-            subRoll = roller(oCreatures.Abberations.length - 1)
+            subRoll = roller(oCreatures.Aberrations.length - 1)
             return oCreatures.Giants[subRoll]
             break;
         case 9:
-            subRoll = roller(oCreatures.Abberations.length - 1)
+            subRoll = roller(oCreatures.Aberrations.length - 1)
             return oCreatures.Humanoid[subRoll]    
             break;
         case 10:
-            subRoll = roller(oCreatures.Abberations.length - 1)
+            subRoll = roller(oCreatures.Aberrations.length - 1)
             return oCreatures.Monstrosities[subRoll]
             break;
         case 11:
-            subRoll = roller(oCreatures.Abberations.length - 1)
+            subRoll = roller(oCreatures.Aberrations.length - 1)
             return oCreatures.Undead[subRoll]
             break;
         default:
