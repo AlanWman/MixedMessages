@@ -43,4 +43,4 @@ Adjusted Die Roll	Result
 2 or less	Immediate Attack
 3-7	        Unfavorable
 8-11	    Favorable
-12 or more	Very Favorabl
+12 or more	Very Favorably
