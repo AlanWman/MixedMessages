@@ -32,26 +32,6 @@ Adjusted Die Roll	Result
 const roller = (x) => Math.floor(Math.random() * x + 1);
 
 
-const oCreatures = {
-    Aberrations: ['Slaad', 'Otyugh', 'Gibbering Mouther', 'Aboleth'],
-    Celestials: ['Pegasus', 'Coutl', 'Angel', 'Empyrean', 'Unicorn'],
-    Constructs: ['Golem', 'Homunculus', 'Animated Objects', 'Shield Guardian'],
-    Dragons: ['Red', 'Blue', 'Green', 'Black', 'White', 'Gold', 'Silver', 'Bronze', 'Brass', 'Copper'],
-    Elementals: ['Earth', 'Air', 'Fire', 'Water'],
-    Fey: ['Lord', 'Hag', 'Dryad', 'Sprite/Pixie'],
-    Fiends: ['Demon', 'Devil', 'Cambion', 'Night Hag'],
-    Giants: ['Frost Giant', 'Fire Giant', 'Stone Giant', 'Storm Giant', 'Hill Giant'],
-    Humanoid: ['goblinoids', 'orcs', 'gnolls', 'lizardfolk', 'kobolds'],
-    Monstrosities: ['Winter Wolf', 'Bulette', 'Roc', 'Medusa'],
-    Undead: ['Zombies', 'Wight', 'Vampire', 'Lich']
-}
-
-const oLocations = {
-    Settlement: ['City', 'Town', 'village', 'outpost'],
-    Temple: ['Good', 'Evil', 'Pantheon'],
-    Other: ['Dungeon', 'Fortress', 'Tavern', 'Forest Grove']
-}
-
 /*Determine Encounter*/
 
 
@@ -131,18 +111,23 @@ const location = () => {
     let roll = roller(3)
     let subRoll = undefined;
 
+    const oLocations = {
+        Settlement: ['City', 'Town', 'village', 'outpost'],
+        Temple: ['Good', 'Evil', 'Pantheon'],
+        Other: ['Dungeon', 'Fortress', 'Tavern', 'Forest Grove']
+
     switch (roll) {
         case 1:
-            subRoll = roller(oCreatures.Settlement.length - 1)
+            subRoll = roller(oLocations.Settlement.length - 1)
             return oLocations.Settlement[subRoll]
             break;
         case 2:
-            subRoll = roller(oCreatures.Temple.length - 1)
-            return oCreatures.Temple[subRoll]
+            subRoll = roller(oLocations.Temple.length - 1)
+            return oLocations.Temple[subRoll]
             break;
         case 3:
-            subRoll = roller(oCreatures.Other.length - 1)
-            return oCreatures.Other[subRoll]
+            subRoll = roller(oLocations.Other.length - 1)
+            return oLocations.Other[subRoll]
             break;
         default:
             console.log('default case of location function')
