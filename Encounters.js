@@ -32,13 +32,48 @@ Adjusted Die Roll	Result
 const roller = (x) => Math.floor(Math.random() * x + 1);
 
 
-//Determine Encounter
+const oCreatures = {
+    Aberrations: ['Slaad', 'Otyugh', 'Gibbering Mouther', 'Aboleth'],
+    Celestials: ['Pegasus', 'Coutl', 'Angel', 'Empyrean', 'Unicorn'],
+    Constructs: ['Golem', 'Homunculus', 'Animated Objects', 'Shield Guardian'],
+    Dragons: ['Red', 'Blue', 'Green', 'Black', 'White', 'Gold', 'Silver', 'Bronze', 'Brass', 'Copper'],
+    Elementals: ['Earth', 'Air', 'Fire', 'Water'],
+    Fey: ['Lord', 'Hag', 'Dryad', 'Sprite/Pixie'],
+    Fiends: ['Demon', 'Devil', 'Cambion', 'Night Hag'],
+    Giants: ['Frost Giant', 'Fire Giant', 'Stone Giant', 'Storm Giant', 'Hill Giant'],
+    Humanoid: ['goblinoids', 'orcs', 'gnolls', 'lizardfolk', 'kobolds'],
+    Monstrosities: ['Winter Wolf', 'Bulette', 'Roc', 'Medusa'],
+    Undead: ['Zombies', 'Wight', 'Vampire', 'Lich']
+}
+
+const oLocations = {
+    Settlement: ['City', 'Town', 'village', 'outpost'],
+    Temple: ['Good', 'Evil', 'Pantheon'],
+    Other: ['Dungeon', 'Fortress', 'Tavern', 'Forest Grove']
+}
+
+/*Determine Encounter*/
 
 
-//Determine Creature
+/*Determine Creature*/
 const Creature = () => {
     let roll = roller(11);
     let subRoll = undefined;
+
+    /*Creature List Object*/
+    const oCreatures = {
+        Aberrations: ['Slaad', 'Otyugh', 'Gibbering Mouther', 'Aboleth'],
+        Celestials: ['Pegasus', 'Coutl', 'Angel', 'Empyrean', 'Unicorn'],
+        Constructs: ['Golem', 'Homunculus', 'Animated Objects', 'Shield Guardian'],
+        Dragons: ['Red', 'Blue', 'Green', 'Black', 'White', 'Gold', 'Silver', 'Bronze', 'Brass', 'Copper'],
+        Elementals: ['Earth', 'Air', 'Fire', 'Water'],
+        Fey: ['Lord', 'Hag', 'Dryad', 'Sprite/Pixie'],
+        Fiends: ['Demon', 'Devil', 'Cambion', 'Night Hag'],
+        Giants: ['Frost Giant', 'Fire Giant', 'Stone Giant', 'Storm Giant', 'Hill Giant'],
+        Humanoid: ['goblinoids', 'orcs', 'gnolls', 'lizardfolk', 'kobolds'],
+        Monstrosities: ['Winter Wolf', 'Bulette', 'Roc', 'Medusa'],
+        Undead: ['Zombies', 'Wight', 'Vampire', 'Lich']
+    }
 
 
     switch (roll) {
@@ -122,25 +157,7 @@ const reaction = () => {
 }
 
 
-const oCreatures = {
-    Aberrations: ['Slaad', 'Otyugh', 'Gibbering Mouther', 'Aboleth'],
-    Celestials: ['Pegasus', 'Coutl', 'Angel', 'Empyrean', 'Unicorn'],
-    Constructs: ['Golem', 'Homunculus', 'Animated Objects', 'Shield Guardian'],
-    Dragons: ['Red', 'Blue', 'Green', 'Black', 'White', 'Gold', 'Silver', 'Bronze', 'Brass', 'Copper'],
-    Elementals: ['Earth', 'Air', 'Fire', 'Water'],
-    Fey: ['Lord', 'Hag', 'Dryad', 'Sprite/Pixie'],
-    Fiends: ['Demon', 'Devil', 'Cambion', 'Night Hag'],
-    Giants: ['Frost Giant', 'Fire Giant', 'Stone Giant', 'Storm Giant', 'Hill Giant'],
-    Humanoid: ['goblinoids', 'orcs', 'gnolls', 'lizardfolk', 'kobolds'],
-    Monstrosities: ['Winter Wolf', 'Bulette', 'Roc', 'Medusa'],
-    Undead: ['Zombies', 'Wight', 'Vampire', 'Lich']
-}
 
-const oLocations = {
-    Settlement: ['City', 'Town', 'village', 'outpost'],
-    Temple: ['Good', 'Evil', 'Pantheon'],
-    Other: ['Dungeon', 'Fortress', 'Tavern', 'Forest Grove']
-}
 
 console.log(Creature());
 
