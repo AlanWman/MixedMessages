@@ -56,7 +56,7 @@ const oLocations = {
 
 
 /*Determine Creature*/
-const Creature = () => {
+const creature = () => {
     let roll = roller(11);
     let subRoll = undefined;
 
@@ -74,7 +74,6 @@ const Creature = () => {
         Monstrosities: ['Winter Wolf', 'Bulette', 'Roc', 'Medusa'],
         Undead: ['Zombies', 'Wight', 'Vampire', 'Lich']
     }
-
 
     switch (roll) {
         case 1:
@@ -127,8 +126,8 @@ const Creature = () => {
     }
 }
 
-//Determine Location
-const Location = () => {
+/*Determine Location*/
+const location = () => {
     let roll = roller(3)
     let subRoll = undefined;
 
@@ -150,14 +149,27 @@ const Location = () => {
             break;
     }
 }
-
+/*Initial demeanor*/
 const reaction = () => {
+    let roll = roller(3)
+    let subRoll = undefined;
 
+    let aReaction = ['Immediate Attack', 'Unfavorable','Favorable','Very Favorable']
 
+    if(roll <= 2){
+        return aReaction[0];
+    }else if(roll >= 3 && roll <= 7){
+        return aReaction[1];
+    }else if(roll >= 8 && roll <= 11){
+        return aReaction[2];
+    }else if(roll >= 12){
+        return aReaction[3];
+    }else {
+        return 'Something went wrong'
+    }
 }
 
-
-
-
-console.log(Creature());
+console.log(creature());
+console.log(location());
+console.log(reaction());
 
