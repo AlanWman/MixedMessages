@@ -2,7 +2,7 @@
 MixedMessages Codecademy Project
 
 ## Description
-The script generates a random enocunter from a set of 3 tables and outputs it to the console.
+A light generator based on 5e for those needing a bit of inspiration or a quick 'something to do' for their intrepid party. The script generates a random enocunter from a set of 3 tables and outputs it to the console.
 
 ## Technology 
 Javascript
@@ -10,7 +10,7 @@ Javascript
 ## Function List - all functions are Global Scope
 - **roller(x)**: Generates a random from 1 with upper bound x (inclusive). Returns result as number.
 - **XdXRoller(x,y)**: Rolls x number of dice with y sides. Returns result as number.
-- **Encounter()**: Outputs random encounter to console. Returns Undefined
+- **encounter()**: Outputs random encounter to console. Returns Undefined
 - **creatures()**: Generates creature from object list. Returns creature as string.
 - **locations()**: Generates Location from object list. Returns location as string.
 - **reactions()**: Generates the creatures initial demeanor from if table. Returns demeanor as string.
