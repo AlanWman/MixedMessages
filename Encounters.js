@@ -1,12 +1,12 @@
 /*Calls Encounter.*/
-Encounter();
+encounter();
 
 /*FUNCTIONS*/
 /*Roll singular die of side 'upperbound'*/
 const roller = (upperbound) => Math.floor(Math.random() * x + 1);
 
 /* Simulate roll of any homogenous set of dice*/
-const XdXRoller = (numOfDice, numOfSides) => {
+const xdyRoller = (numOfDice, numOfSides) => {
     
     let result = 0;
 
@@ -17,7 +17,7 @@ const XdXRoller = (numOfDice, numOfSides) => {
 }
 
 /*Determine Encounter*/
-const Encounter = () => {
+const encounter = () => {
     const creature = creatures();
     const location = locations();
     const reaction = reactions();
