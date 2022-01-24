@@ -127,9 +127,9 @@ const locations = () => {
     let subRoll = undefined;
 
     const oLocations = {
-        Settlement: ['City', 'Town', 'village', 'outpost'],
-        Temple: ['Good', 'Evil', 'Pantheon'],
-        Other: ['Dungeon', 'Fortress', 'Tavern', 'Forest Grove']
+        Settlement: ['a City', 'a Town', 'a Village', 'a Outpost'],
+        Temple: ['a Temple of Good', 'a Temple of Evil', 'a Temple of a Pantheon'],
+        Other: ['in a Dungeon', ' at a Fortress', 'at a Tavern', 'in a Forest Grove']
     }
 
     switch (roll) {
