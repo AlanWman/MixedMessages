@@ -60,8 +60,8 @@ const creatures = () => {
         Aberrations: ['Slaad', 'Otyugh', 'Gibbering Mouther', 'Aboleth'],
         Celestials: ['Pegasus', 'Coutl', 'Angel', 'Empyrean', 'Unicorn'],
         Constructs: ['Golem', 'Homunculus', 'Animated Objects', 'Shield Guardian'],
-        Dragons: ['Red', 'Blue', 'Green', 'Black', 'White', 'Gold', 'Silver', 'Bronze', 'Brass', 'Copper'],
-        Elementals: ['Earth', 'Air', 'Fire', 'Water'],
+        Dragons: ['Red Dragon', 'Blue Dragon', 'Green Dragon', 'Black Dragon', 'White Dragon', 'Gold Dragon', 'Silver Dragon', 'Bronze Dragon', 'Brass Dragon', 'Copper Dragon'],
+        Elementals: ['Earth Elemental', 'Air Elemental', 'Fire Elemental', 'Water Elemental'],
         Fey: ['Lord', 'Hag', 'Dryad', 'Sprite/Pixie'],
         Fiends: ['Demon', 'Devil', 'Cambion', 'Night Hag'],
         Giants: ['Frost Giant', 'Fire Giant', 'Stone Giant', 'Storm Giant', 'Hill Giant'],
@@ -72,7 +72,7 @@ const creatures = () => {
 
     switch (roll) {
         case 1:
-            subRoll = roller(oCreatures.Abberations.length - 1)
+            subRoll = roller(oCreatures.Aberrations.length - 1)
             return oCreatures.Aberrations[subRoll]
             break;
         case 2:
