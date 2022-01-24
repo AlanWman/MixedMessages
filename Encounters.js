@@ -34,10 +34,10 @@ const roller = (x) => Math.floor(Math.random() * x + 1);
 
 /*Determine Encounter*/
 
-const Encounter = (creatures, locations, reactions ) => {
-    const creature = creatures();
-    const location = locations();
-    const reaction = reactions();
+const Encounter = (creatures, locations, reactions) => {
+    const creature = creatures;
+    const location = locations;
+    const reaction = reactions;
 
     return `The party encounters ${creature}(s) at ${location}. Their demeanor is: ${reaction}.`;
 }
