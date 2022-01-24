@@ -30,7 +30,15 @@ Adjusted Die Roll	Result
 
 
 const roller = (x) => Math.floor(Math.random() * x + 1);
+const XdXRoller = (numOfDice, numOfSides) => {
+    
+    let result = 0;
 
+    for(let i=0; i <= numOfDice; i++){
+        result+= roller(numOfSides);
+    }
+    return result;
+}
 
 /*Determine Encounter*/
 
@@ -144,9 +152,8 @@ const locations = () => {
 }
 /*Initial demeanor*/
 const reactions = () => {
-    let roll = roller(3)
-    let subRoll = undefined;
-
+    let roll = XdXRoller(2,6);
+  
     let aReaction = ['Immediately Hostile', 'Unfavorable','Favorable','Very Favorable']
 
     if(roll <= 2){
