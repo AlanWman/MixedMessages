@@ -15,9 +15,6 @@ Javascript
 - **locations()**: Generates Location from object list. Returns location as string.
 - **reactions()**: Generates the creatures initial demeanor from if table. Returns demeanor as string.
 
-## Global Variables
-- Includes no global variables.
-
 ## Appendix - Tables
 Creature types from 5e SRD rules - http://5e.d20srd.org/srd/monsters/intro.htm
 Note - Beasts, plants and oozes were cut from the list.
